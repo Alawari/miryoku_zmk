@@ -5,5 +5,5 @@
 #include "../miryoku/mapping/42/corne.h"
 #include "../miryoku/miryoku.dtsi"
 &led_strip {
-    chain-length = <27>;
+    chain-length = <44>;
 };
