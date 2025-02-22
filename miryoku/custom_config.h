@@ -1,9 +1,9 @@
-/*#pragma once
+#pragma once
 
 #include <dt-bindings/zmk/hid_usage.h>
 #include <dt-bindings/zmk/hid_usage_pages.h>
 #include <dt-bindings/zmk/modifiers.h>
-#include <dt-bindings/zmk/keys.h>*/
+#include <dt-bindings/zmk/keys.h>
 
 /*
 * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -85,22 +85,22 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define DE_DEG  LS(DE_CEDL)   // °
-#define DE_EXLM LS(DE_N1)    // !
-#define DE_DQT 	LS(DE_N2)    // "
-#define DE_SECT LS(DE_N3)    // §
-#define DE_DLR  LS(DE_N4)    // $
-#define DE_PERC LS(DE_N5)    // %
-#define DE_AMPR LS(DE_N6)    // &
-#define DE_SLASH LS(DE_N7)    // /
-#define DE_LPRN LS(DE_N8)    // (
-#define DE_RPRN LS(DE_N9)    // )
-#define DE_EQL  LS(DE_N0)    // =
+#define DE_DEG  LS(DE_CIRC)   // °
+#define DE_EXLM LS(DE_1)    // !
+#define DE_DQT 	LS(DE_2)    // "
+#define DE_SECT LS(DE_3)    // §
+#define DE_DLR  LS(DE_4)    // $
+#define DE_PERC LS(DE_5)    // %
+#define DE_AMPR LS(DE_6)    // &
+#define DE_SLASH LS(DE_7)    // /
+#define DE_LPRN LS(DE_8)    // (
+#define DE_RPRN LS(DE_9)    // )
+#define DE_EQL  LS(DE_0)    // =
 #define DE_QUES LS(DE_SQT)   // ?
-#define DE_GRV  LS(DE_PLUS)  // ` (dead)
-#define DE_ASTR LS(DE_LT)    // *
+/* #define DE_GRV  LS(DE_PLUS)  // ` (dead) */
+#define DE_ASTR LS(DE_PLUS)    // *
 #define DE_SQT 	LS(DE_COMMA) // '
-#define DE_RABK LS(DE_DOT)   // >
+/* #define DE_RABK LS(DE_DOT)   // > */
 /* #define DE_SCLN LS(DE_MINUS) // ; */
 #define DE_COLN LS(DE_DOT)  // :
 #define DE_UNDS LS(DE_MINS) // _
