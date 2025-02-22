@@ -93,7 +93,8 @@
 #define SI_DIAE S(SI_CEDL)   // ¨ (dead)
 #define SI_EXCL LS(SI_N1)    // !
 #define SI_DQT LS(SI_N2)     // "
-#define SI_HASH LS(SI_N3)    // #
+/* #define SI_HASH LS(SI_N3)    // # */
+#define SI_HASH LS(BACKSLASH)    // #
 #define SI_DLLR LS(SI_N4)    // $
 #define SI_PRCNT LS(SI_N5)   // %
 #define SI_AMPS LS(SI_N6)    // &
