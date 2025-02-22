@@ -1,18 +1,139 @@
-// Copyright 2021 Manna Harbour
-// https://github.com/manna-harbour/miryoku
+/*
+* ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
+ * │ ^ │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ ß │ ´ │       │
+ * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
+ * │     │ Q │ W │ E │ R │ T │ Z │ U │ I │ O │ P │ Ü │ + │     │
+ * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┐    │
+ * │      │ A │ S │ D │ F │ G │ H │ J │ K │ L │ Ö │ Ä │ # │    │
+ * ├────┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴────┤
+ * │    │ < │ Y │ X │ C │ V │ B │ N │ M │ , │ . │ - │          │
+ * ├────┼───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
+ * │    │    │    │                        │    │    │    │    │
+ * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
+ */
+// Row 1
+#define DE_CIRC GRAVE  // ^ (dead)
+#define DE_1    N1    // 1
+#define DE_2    N2    // 2
+#define DE_3    N3    // 3
+#define DE_4    N4    // 4
+#define DE_5    N5    // 5
+#define DE_6    N6    // 6
+#define DE_7    N7    // 7
+#define DE_8    N8    // 8
+#define DE_9    N9    // 9
+#define DE_0    N0    // 0
+#define DE_SS   MINUS // ß
+#define DE_ACUT EQUAL  // ´ (dead)
+// Row 2
+#define DE_Q    Q    // Q
+#define DE_W    W    // W
+#define DE_E    E    // E
+#define DE_R    R    // R
+#define DE_T    T    // T
+#define DE_Z    Y    // Z
+#define DE_U    U    // U
+#define DE_I    I    // I
+#define DE_O    O    // O
+#define DE_P    P    // P
+#define DE_UDIA LBKT // Ü
+#define DE_PLUS RBKT // +
+// Row 3
+#define DE_A    A    // A
+#define DE_S    S    // S
+#define DE_D    D    // D
+#define DE_F    F    // F
+#define DE_G    G    // G
+#define DE_H    H    // H
+#define DE_J    J    // J
+#define DE_K    K    // K
+#define DE_L    L    // L
+#define DE_ODIA SEMI // Ö
+#define DE_ADIA SQT // Ä
+#define DE_HASH NUHS // #
+// Row 4
+#define DE_LABK NUBS // <
+#define DE_Y    Z    // Y
+#define DE_X    X    // X
+#define DE_C    C    // C
+#define DE_V    V    // V
+#define DE_B    B    // B
+#define DE_N    N    // N
+#define DE_M    M    // M
+#define DE_COMMA COMMA // ,
+#define DE_DOT  DOT  // .
+#define DE_MINS SLSH // -
 
-//#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+/* Shifted symbols
+ * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
+ * │ ¨ │ ! │ " │ # │ $ │ % │ & │ / │ ( │ ) │ = │ ? │ * │       │
+ * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
+ * │     │   │   │   │   │   │   │   │   │   │   │   │   │     │
+ * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┐    │
+ * │      │   │   │   │   │   │   │   │   │   │   │   │   │    │
+ * ├────┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴────┤
+ * │    │ > │   │   │   │   │   │   │   │ ; │ : │ _ │          │
+ * ├────┼───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
+ * │    │    │    │                        │    │    │    │    │
+ * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
+ */
+// Row 1
+#define DE_DEG  S(SI_CEDL)   // °
+#define DE_EXLM LS(SI_N1)    // !
+#define DE_DQT LS(SI_N2)    // "
+#define DE_SECT LS(SI_N3)    // §
+#define DE_DLR  LS(SI_N4)    // $
+#define DE_PERC LS(SI_N5)    // %
+#define DE_AMPR LS(SI_N6)    // &
+#define DE_SLASH LS(SI_N7)    // /
+#define DE_LPRN LS(SI_N8)    // (
+#define DE_RPRN LS(SI_N9)    // )
+#define DE_EQL  LS(SI_N0)    // =
+#define DE_QUES LS(SI_SQT)   // ?
+#define DE_GRV  LS(SI_PLUS)  // ` (dead)
+#define DE_ASTR LS(SI_LT)    // *
+#define DE_SQT LS(SI_COMMA) // '
+#define DE_RABK LS(SI_DOT)   // >
+#define DE_SCLN LS(SI_MINUS) // ;
+#define DE_COLN S(DE_DOT)  // :
+#define DE_UNDS S(DE_MINS) // _
+// Row 2
+#define DE_SUP2 ALGR(DE_2)    // ²
+#define DE_SUP3 ALGR(DE_3)    // ³
+#define DE_LCBR ALGR(DE_7)    // {
+#define DE_LBRC ALGR(DE_8)    // [
+#define DE_RBRC ALGR(DE_9)    // ]
+#define DE_RCBR ALGR(DE_0)    // }
+#define DE_BSLS ALGR(DE_SS)   // (backslash)
+#define DE_AT   ALGR(DE_Q)    // @
+#define DE_EURO ALGR(DE_E)    // €
+#define DE_TILD ALGR(DE_PLUS) // ~
+#define DE_PIPE ALGR(DE_LABK) // |
+#define DE_MICR ALGR(DE_M)    // µ
+// special keys
+# define DE_LGUI LALT	// super
+# define DE_LALT LGUI	// left alt
 
+
+
+
+/*
+ ***************************************************************************************************
+ * Base layer:
+ ***************************************************************************************************
+ *  +--------+--------+--------+--------+--------+--------+             +--------+--------+--------+--------+--------+--------+
+ *  | TAB    |  q  Q  |  w  W  |  f  F  |  p  P  |  b  B  |             |  j  J  |  l  L  |  u  U  |  y  Y  |  '     |  =  +  |
+ *  +--------+--------+--------+--------+--------+--------+             +--------+--------+--------+--------+--------+--------+
+ *  | EXT1   |  a  A  |  r  R  |  s  S  |  t  T  |  g  G  |             |  m  M  |  n  N  |  e  E  |  i  I  |  o  O  |  '  "  |
+ *  +--------+--------+--------+--------+--------+--------+             +--------+--------+--------+--------+--------+--------+
+ *  | Shift  |  z  Z  |  x  X  |  c  C  |  d  D  |  v  V  |             |  k  K  |  h  H  |  ,  <  |  .  >  |  /  ?  | Shift  |
+ *  +--------+--------+--------+----+---+----+---+----+---+----+   +----+---+----+---+----+---+----+--------+--------+--------+
+ *                                  | Esc    | Space   | Tab   |   | Enter  | BSPC    | DEL   |
+ *                                  +--------+--------+--------+   +--------+--------+--------+
+*/
 #define XXX &none
 #define MIRYOKU_LAYER_BASE \
-&kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
-U_MT(LGUI, A),     U_MT(LALT, R),     U_MT(LCTRL, S),    U_MT(LSHFT, T),    &kp G,             &kp M,             U_MT(LSHFT, N),    U_MT(LCTRL, E),    U_MT(LALT, I),     U_MT(LGUI, O),     \
-U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
+&kp DE_Q,             &kp DE_W,             &kp DE_F,             &kp DE_P,             &kp DE_B,             &kp DE_J,             &kp DE_L,             &kp DE_U,             &kp DE_Y,             &kp DE_SQT,           \
+U_MT(DE_LGUI, DE_A),     U_MT(DE_LALT, DE_R),     U_MT(LCTRL, DE_S),    U_MT(LSHFT, DE_T),    &kp DE_G,             &kp DE_M,             U_MT(LSHFT, DE_N),    U_MT(LCTRL, DE_E),    U_MT(DE_LALT, DE_I),     U_MT(DE_LGUI, DE_O),     \
+U_LT(U_BUTTON, DE_Z), U_MT(RALT, DE_X),     &kp DE_C,             &kp DE_D,             &kp DE_V,             &kp DE_K,             &kp DE_H,             &kp DE_COMMA,         U_MT(RALT, DE_DOT),   U_LT(U_BUTTON, DE_SLASH),\
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, SPACE), U_LT(U_MOUSE, TAB), U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
-
-
-#define MIRYOKU_LAYER_MOUSE \
-U_MT(LG(LS(Q)), LG(Q)),     U_MT(LG(LS(W)), LG(W)),     U_MT(LG(LS(E)), LG(E)),     U_MT(LG(LS(R)), LG(R)),     U_MT(LG(LS(T)), LG(T)),     U_MT(LG(LS(Z)), LG(Z)),     U_MT(LG(LS(U)), LG(U)),     U_MT(LG(LS(I)), LG(I)),     U_MT(LG(LS(O)), LG(O)),     U_MT(LG(LS(P)), LG(P)),    \
-U_MT(LG(LS(A)), LG(A)),     U_MT(LG(LS(S)), LG(S)),     U_MT(LG(LS(D)), LG(D)),     U_MT(LG(LS(F)), LG(F)),     U_MT(LG(LS(G)), LG(G)),     U_MT(LG(LS(H)), LG(H)),     U_MT(LG(LS(J)), LG(J)),     U_MT(LG(LS(K)), LG(K)),     U_MT(LG(LS(L)), LG(L)),     U_MT(LG(LS(RA(P))), LG(RA(P))),    \
-U_MT(LG(LS(Y)), LG(Y)),     U_MT(LG(LS(X)), LG(X)),     U_MT(LG(LS(C)), LG(C)),     U_MT(LG(LS(V)), LG(V)),     U_MT(LG(LS(B)), LG(B)),     U_MT(LG(LS(N)), LG(N)),     U_MT(LG(LS(M)), LG(M)),     U_MT(LG(SEMI), LG(COMMA)),     U_MT(LG(PERIOD), LG(COLON)),     U_MT(LG(UNDERSCORE), LG(MINUS)),    \
-U_NP,              U_NP,              U_NA, U_NA, U_NA, U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
