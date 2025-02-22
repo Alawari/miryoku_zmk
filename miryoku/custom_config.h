@@ -35,8 +35,8 @@
 #define SI_N8 N8      // 8
 #define SI_N9 N9      // 9
 #define SI_N0 N0      // 0
-#define SI_SQT MINUS  // '
-#define SI_PLUS EQUAL // +
+#define SI_SQT EQUAL  // '
+#define SI_PLUS RBKT // +
 // Row 2
 #define SI_Q Q       // Q
 #define SI_W W       // W
@@ -49,7 +49,7 @@
 #define SI_O O       // O
 #define SI_P P       // P
 #define SI_UE LBKT // Ü
-#define SI_DSTR RBKT // Đ
+/* #define SI_DSTR RBKT // Đ */
 // Row 3
 #define SI_A A       // A
 #define SI_S S       // S
