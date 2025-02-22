@@ -85,25 +85,25 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define DE_DEG  S(SI_CEDL)   // °
-#define DE_EXLM LS(SI_N1)    // !
-#define DE_DQT LS(SI_N2)    // "
-#define DE_SECT LS(SI_N3)    // §
-#define DE_DLR  LS(SI_N4)    // $
-#define DE_PERC LS(SI_N5)    // %
-#define DE_AMPR LS(SI_N6)    // &
-#define DE_SLASH LS(SI_N7)    // /
-#define DE_LPRN LS(SI_N8)    // (
-#define DE_RPRN LS(SI_N9)    // )
-#define DE_EQL  LS(SI_N0)    // =
-#define DE_QUES LS(SI_SQT)   // ?
-#define DE_GRV  LS(SI_PLUS)  // ` (dead)
-#define DE_ASTR LS(SI_LT)    // *
-#define DE_SQT LS(SI_COMMA) // '
-#define DE_RABK LS(SI_DOT)   // >
-#define DE_SCLN LS(SI_MINUS) // ;
-#define DE_COLN S(DE_DOT)  // :
-#define DE_UNDS S(DE_MINS) // _
+#define DE_DEG  LS(DE_CEDL)   // °
+#define DE_EXLM LS(DE_N1)    // !
+#define DE_DQT 	LS(DE_N2)    // "
+#define DE_SECT LS(DE_N3)    // §
+#define DE_DLR  LS(DE_N4)    // $
+#define DE_PERC LS(DE_N5)    // %
+#define DE_AMPR LS(DE_N6)    // &
+#define DE_SLASH LS(DE_N7)    // /
+#define DE_LPRN LS(DE_N8)    // (
+#define DE_RPRN LS(DE_N9)    // )
+#define DE_EQL  LS(DE_N0)    // =
+#define DE_QUES LS(DE_SQT)   // ?
+#define DE_GRV  LS(DE_PLUS)  // ` (dead)
+#define DE_ASTR LS(DE_LT)    // *
+#define DE_SQT 	LS(DE_COMMA) // '
+#define DE_RABK LS(DE_DOT)   // >
+#define DE_SCLN LS(DE_MINUS) // ;
+#define DE_COLN LS(DE_DOT)  // :
+#define DE_UNDS LS(DE_MINS) // _
 // Row 2
 #define DE_SUP2 RALT(DE_2)    // ²
 #define DE_SUP3 RALT(DE_3)    // ³
