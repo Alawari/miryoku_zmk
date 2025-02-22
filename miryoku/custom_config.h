@@ -1,9 +1,9 @@
-#pragma once
+/*#pragma once
 
 #include <dt-bindings/zmk/hid_usage.h>
 #include <dt-bindings/zmk/hid_usage_pages.h>
 #include <dt-bindings/zmk/modifiers.h>
-#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>*/
 
 /*
 * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -105,18 +105,18 @@
 #define DE_COLN S(DE_DOT)  // :
 #define DE_UNDS S(DE_MINS) // _
 // Row 2
-#define DE_SUP2 ALGR(DE_2)    // ²
-#define DE_SUP3 ALGR(DE_3)    // ³
-#define DE_LCBR ALGR(DE_7)    // {
-#define DE_LBRC ALGR(DE_8)    // [
-#define DE_RBRC ALGR(DE_9)    // ]
-#define DE_RCBR ALGR(DE_0)    // }
-#define DE_BSLS ALGR(DE_SS)   // (backslash)
-#define DE_AT   ALGR(DE_Q)    // @
-#define DE_EURO ALGR(DE_E)    // €
-#define DE_TILD ALGR(DE_PLUS) // ~
-#define DE_PIPE ALGR(DE_LABK) // |
-#define DE_MICR ALGR(DE_M)    // µ
+#define DE_SUP2 RALT(DE_2)    // ²
+#define DE_SUP3 RALT(DE_3)    // ³
+#define DE_LCBR RALT(DE_7)    // {
+#define DE_LBRC RALT(DE_8)    // [
+#define DE_RBRC RALT(DE_9)    // ]
+#define DE_RCBR RALT(DE_0)    // }
+#define DE_BSLS RALT(DE_SS)   // (backslash)
+#define DE_AT   RALT(DE_Q)    // @
+#define DE_EURO RALT(DE_E)    // €
+#define DE_TILD RALT(DE_PLUS) // ~
+#define DE_PIPE RALT(DE_LABK) // |
+#define DE_MICR RALT(DE_M)    // µ
 // special keys
 #define DE_LGUI LALT	// super
 #define DE_LALT LGUI	// left alt
