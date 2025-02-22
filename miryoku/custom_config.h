@@ -69,7 +69,7 @@
 #define DE_M    M    // M
 #define DE_COMMA COMMA // ,
 #define DE_DOT  DOT  // .
-#define DE_MINS SLSH // -
+#define DE_MINS FSLH // -
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -101,7 +101,7 @@
 #define DE_ASTR LS(DE_LT)    // *
 #define DE_SQT 	LS(DE_COMMA) // '
 #define DE_RABK LS(DE_DOT)   // >
-#define DE_SCLN LS(DE_MINUS) // ;
+/* #define DE_SCLN LS(DE_MINUS) // ; */
 #define DE_COLN LS(DE_DOT)  // :
 #define DE_UNDS LS(DE_MINS) // _
 // Row 2
