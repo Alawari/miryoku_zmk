@@ -111,8 +111,8 @@
 #define DE_PIPE ALGR(DE_LABK) // |
 #define DE_MICR ALGR(DE_M)    // µ
 // special keys
-# define DE_LGUI LALT	// super
-# define DE_LALT LGUI	// left alt
+#define DE_LGUI LALT	// super
+#define DE_LALT LGUI	// left alt
 
 
 
