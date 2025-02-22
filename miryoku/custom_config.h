@@ -137,14 +137,14 @@
 #define SI_BSLH RA(SI_Q)   // (backslash)
 #define SI_PIPE RA(SI_W)   // |
 #define SI_EURO RA(SI_E)   // €
-#define SI_DIV RA(SI_SCAR) // ÷
+#define SI_DIV RA(SI_UE) // ÷
 #define SI_MUL RA(SI_DSTR) // ×
 // Row 3 (only AltGr)
 #define SI_LBKT RA(SI_F)    // [
 #define SI_RBKT RA(SI_G)    // ]
 #define SI_LLST RA(SI_K)    // ł
 #define SI_CLST RA(SI_L)    // Ł
-#define SI_SS RA(SI_CACU)   // ß
+#define SI_SS RA(SI_AE)   // ß
 #define SI_CURR RA(SI_ZCAR) // ¤
 // Row 4 (only AltGr)
 #define SI_AT RA(SI_V)   // @
