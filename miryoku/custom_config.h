@@ -182,7 +182,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, SPACE), U_
 
 
 
-#define MIRYOKU_NAV \
+#define MIRYOKU_LAYER_NAV \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
 &kp SI_LGUI,          &kp SI_LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &u_caps_word,      &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         \
 U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp INS,           &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           \
@@ -191,7 +191,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 
 
-#define MIRYOKU_MOUSE \
+#define MIRYOKU_LAYER_MOUSE \
 U_MT(SI_LGUI(LS(SI_Q))), SI_LGUI(SI_Q),            SI_LGUI(SI_W),       SI_LGUI(SI_E),       SI_LGUI(SI_R),       SI_LGUI(SI_T),       SI_LGUI(SI_Z),       SI_LGUI(SI_U),       SI_LGUI(SI_I),      SI_LGUI(SI_O),      SI_LGUI(SI_P),      \
 SI_LGUI(SI_A),			SI_LGUI(SI_S),            SI_LGUI(SI_D),       SI_LGUI(SI_F),       SI_LGUI(SI_G),       SI_LGUI(SI_H),       SI_LGUI(SI_J),       SI_LGUI(SI_K),       SI_LGUI(SI_L),      SI_LGUI(SI_OE),      \
 SI_LGUI(SI_Y),			SI_LGUI(SI_X),            SI_LGUI(SI_C),       SI_LGUI(SI_V),       SI_LGUI(SI_B),       SI_LGUI(SI_N),       U_MT(SI_LGUI(LS(SI_M)), SI_LGUI(SI_M)),       SI_LGUI(SI_COMMA),       SI_LGUI(SI_DOT),      SI_LGUI(SI_MINUS),     \
