@@ -206,3 +206,10 @@ U_NP,              U_NP,              U_NA, U_NA, U_NA, U_LT(U_SYM, RET),  U_LT(
 &kp SI_SEMI,     &kp SI_N4,     &kp SI_N5,     &kp SI_N6,     &kp SI_EQUAL,     &kp LA(SI_SS),     &kp LA(SI_N4),     &kp LA(SI_N5),     &kp LA(SI_N6),     &kp LA(SI_CARET),    \
 &kp SI_FSLH,     &kp SI_N1,     &kp SI_N2,     &kp SI_N3,     &kp SI_BSLH,     &kp LA(SI_SS),     &kp LA(SI_N1),     &kp LA(SI_N2),     &kp LA(SI_N3),     &kp LA(SI_SQT),    \
 U_NP,              U_NP,              &kp SI_DOT,           &kp SI_N0,            &kp SI_MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+
+
+#define MIRYOKU_ALTERNATIVES_SYM \
+&kp SI_LBRC,          &kp SI_AMPS,          &kp SI_ASTRK,         &kp SI_LPAR,          &kp SI_RBRC,          &kp LA(LS(SI_SS)),     &kp LA(LS(SI_N7)),     &kp LA(LS(SI_N8)),     &kp LA(LS(SI_N9)),     &kp LA(LS(SI_N0)),              \
+&kp SI_COLON,         &kp SI_DLLR,          &kp SI_PRCNT,         &kp SI_CARET,         &kp SI_PLUS,          &kp LA(LS(SI_SS)),     &kp LA(LS(SI_N4)),     &kp LA(LS(SI_N5)),     &kp LA(LS(SI_N6)),     &kp LA(LS(SI_CARET)),           \
+&kp SI_TILDE,         &kp SI_EXCL,          &kp SI_AT,            &kp SI_HASH,          &kp SI_PIPE,          &kp LA(LS(SI_SS)),     &kp LA(LS(SI_N1)),     &kp LA(LS(SI_N2)),     &kp LA(LS(SI_N3)),     &kp LA(LS(SI_SQT)),             \
+U_NP,              U_NP,              &kp SI_LPAR,          &kp SI_RPAR,          &kp SI_UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
