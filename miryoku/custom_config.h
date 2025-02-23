@@ -194,4 +194,4 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, SPACE), U_
 U_MT(LA(LS(Q)), LA(Q)),            LA(W),       LA(E),       LA(R),       LA(T),       LA(Z),       LA(U),       LA(I),      LA(O),      LA(P),      \
 LA(A),			LA(S),            LA(D),       LA(F),       LA(G),       LA(H),       LA(J),       LA(K),       LA(L),      U_NA,      \
 LA(Y),			LA(X),            LA(C),       LA(V),       LA(B),       LA(N),       U_MT(LA(LS(M)), LA(M)),       LA(COMMA),       LA(DOT),      LA(MINUS),     \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+U_NP,              U_NP,               U_NA, U_NA, U_NA,, U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
