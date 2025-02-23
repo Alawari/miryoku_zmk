@@ -198,3 +198,11 @@ U_MT(SI_LG(LS(SI_Q)), SI_LG(SI_Q)),     &kp LA(W),     &kp LA(E),     &kp LA(R),
  &kp LA(A),     &kp LA(S),     &kp LS(D),     &kp LA(F),     &kp LA(G),     &kp LA(H),     &kp LA(J),     &kp LA(K),     &kp LA(L),     &kp LA(SI_OE),    \
 &kp LA(SI_Y),     &kp LA(X),     &kp LA(C),    &kp LA(V),     U_MT(SI_LG(LS(SI_B)), SI_LG(SI_B)),     &kp LA(N),     U_MT(SI_LG(LS(SI_M)), SI_LG(SI_M)),     &kp LA(SI_COMMA),    &kp LA(SI_DOT),     &kp LA(SI_MINUS),    \
 U_NP,              U_NP,              U_NA, U_NA, U_NA, U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+
+
+
+#define MIRYOKU_LAYER_NUM \
+&kp SI_LBKT,     &kp SI_N7,     &kp SI_N8,     &kp SI_N9,     &kp SI_RBKT,     &kp LA(SI_SS),     &kp LA(SI_N7),     &kp LA(SI_N8),     &kp LA(SI_N9),     &kp LA(SI_N0),    \
+&kp SI_SEMI,     &kp SI_N4,     &kp SI_N5,     &kp SI_N6,     &kp SI_EQUAL,     &kp LA(SI_SS),     &kp LA(SI_N4),     &kp LA(SI_N5),     &kp LA(SI_N6),     &kp LA(SI_CARET),    \
+&kp SI_FSLH,     &kp SI_N1,     &kp SI_N2,     &kp SI_N3,     &kp SI_BSLH,     &kp LA(SI_SS),     &kp LA(SI_N1),     &kp LA(SI_N2),     &kp LA(SI_N3),     &kp LA(SI_SQT),    \
+U_NP,              U_NP,              &kp SI_DOT,           &kp SI_N0,            &kp SI_MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
