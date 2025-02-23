@@ -179,7 +179,7 @@
 &kp SI_Q,             &kp SI_W,             &kp SI_F,             &kp SI_P,             &kp SI_B,             &kp SI_J,             &kp SI_L,             &kp SI_U,             &kp SI_Y,             &kp SI_PLUS,           \
 U_MT(SI_LGUI, SI_A),     U_MT(SI_LALT, SI_R),     U_MT(LCTRL, SI_S),    U_MT(LSHFT, SI_T),    &kp SI_G,             &kp SI_M,             U_MT(LSHFT, SI_N),    U_MT(LCTRL, SI_E),    U_MT(SI_LALT, SI_I),     U_MT(SI_LGUI, SI_O),     \
 U_LT(U_BUTTON, SI_Z), U_MT(RALT, SI_X),     &kp SI_C,             &kp SI_D,             &kp SI_V,             &kp SI_K,             &kp SI_H,             &kp SI_COMMA,         U_MT(RALT, SI_DOT),   U_LT(U_BUTTON, SI_HASH),\
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(SI_LGUI, SPACE), U_LT(U_NAV, TAB), U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_MOUSE, SPACE), U_LT(U_NAV, TAB), U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
 
 
