@@ -94,7 +94,7 @@
 #define SI_EXCL LS(SI_N1)    // !
 #define SI_DQT LS(SI_N2)     // "
 /* #define SI_HASH LS(SI_N3)    // # */
-#define SI_HASH LS(BACKSLASH)    // #
+#define SI_HASH BACKSLASH    // #
 #define SI_DLLR LS(SI_N4)    // $
 #define SI_PRCNT LS(SI_N5)   // %
 #define SI_AMPS LS(SI_N6)    // &
@@ -124,9 +124,8 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1 AltGr
-#define SI_TILDE RA(SI_N1) // ~
+#define SI_TILDE RA(SI_PLUS) // ~
 #define SI_CARN RA(SI_N2)  // ˇ (dead)
-#define SI_CARET RA(SI_N3) // ^ (dead)
 #define SI_BREV RA(SI_N4)  // ˘ (dead)
 #define SI_RNGA RA(SI_N5)  // ° (dead)
 #define SI_OGON RA(SI_N6)  // ˛ (dead)
@@ -134,23 +133,24 @@
 #define SI_DOTA RA(SI_N8)  // ˙ (dead)
 #define SI_ACUT RA(SI_N9)  // ´ (dead)
 #define SI_DACU RA(SI_N0)  // ˝ (dead)
+#define SI_CARET GRAVE // ^ (dead)
 // Row 2 (only AltGr)
 #define SI_BSLH RA(SI_Q)   // (backslash)
-#define SI_PIPE RA(SI_W)   // |
+#define SI_PIPE RA(SI_GT)   // |
 #define SI_EURO RA(SI_E)   // €
 #define SI_DIV RA(SI_UE) // ÷
-#define SI_MUL RA(SI_DSTR) // ×
+/* #define SI_MUL RA(SI_DSTR) // × */
 // Row 3 (only AltGr)
-#define SI_LBKT RA(SI_F)    // [
-#define SI_RBKT RA(SI_G)    // ]
+#define SI_LBKT RA(SI_N8)    // [
+#define SI_RBKT RA(SI_N9)    // ]
 #define SI_LLST RA(SI_K)    // ł
 #define SI_CLST RA(SI_L)    // Ł
 #define SI_SS RA(SI_AE)   // ß
 #define SI_CURR RA(SI_ZCAR) // ¤
 // Row 4 (only AltGr)
-#define SI_AT RA(SI_V)   // @
-#define SI_LBRC RA(SI_B) // {
-#define SI_RBRC RA(SI_N) // }
+#define SI_AT RA(SI_Q)   // @
+#define SI_LBRC RA(SI_N7) // {
+#define SI_RBRC RA(SI_N0) // }
 #define SI_SECT RA(SI_M) // §
 // special keys
 #define SI_LGUI LALT	// super
