@@ -213,13 +213,13 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 /* &kp SI_SEMI,     &kp SI_N4,     &kp SI_N5,     &kp SI_N6,     &kp SI_EQUAL,    &kp LA(SI_SS),     &kp LA(SI_N4),     &kp LA(SI_N5),     &kp LA(SI_N6),     &kp LA(SI_CARET),    \ */
 /* &kp SI_FSLH,     &kp SI_N1,     &kp SI_N2,     &kp SI_N3,     &kp SI_BSLH,     &kp LA(SI_SS),     &kp LA(SI_N1),     &kp LA(SI_N2),     &kp LA(SI_N3),     &kp LA(SI_SQT),    \ */
 /* U_NP,            U_NP,          &kp SI_DOT,    &kp SI_N0,     &kp SI_MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP        */
-
+/*
 #define MIRYOKU_LAYER_NUM \
 &kp SI_LBKT,     &kp SI_N7,     &kp SI_N8,     &kp SI_N9,     &kp SI_RBKT,     &kp LA(SI_SS),         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
 &kp SI_SEMI,     &kp SI_N4,     &kp SI_N5,     &kp SI_N6,     &kp SI_EQUAL,    &kp LA(SI_SS),         U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &kp SI_FSLH,     &kp SI_N1,     &kp SI_N2,     &kp SI_N3,     &kp SI_BSLH,     &kp LA(SI_SS),         U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
 U_NP,            U_NP,          &kp SI_DOT,    &kp SI_N0,     &kp SI_MINUS,         U_NA,             U_NA,              U_NA,              U_NA,              U_NP,              U_NP
-
+*/
 
 
 
