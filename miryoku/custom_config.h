@@ -199,7 +199,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(SI_LGUI, SPACE), 
 /* &kp LA(SI_Y),     &kp LA(X),     &kp LA(C),    &kp LA(V),     U_MT(SI_LG(LS(SI_B)), SI_LG(SI_B)),     &kp LA(N),     U_MT(SI_LG(LS(SI_M)), SI_LG(SI_M)),     &kp LA(SI_COMMA),    &kp LA(SI_DOT),     &kp LA(SI_MINUS),    \ */
 /* U_NP,              U_NP,              U_NA, U_NA, U_NA, U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP */
 
-#define MIRYOKU_ALTERNATIVES_MOUSE \
+#define MIRYOKU_LAYER_MOUSE \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_MT(LS(SI_SS),SI_SS),     U_MT(LS(SI_N7),SI_N7),     U_MT(LS(SI_N8),SI_N8),     U_MT(LS(SI_N9),SI_N9),     U_MT(LS(SI_N0),SI_N0),            \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_MT(LS(SI_SS),SI_SS),     U_MT(LS(SI_N4),SI_N4),     U_MT(LS(SI_N5),SI_N5),     U_MT(LS(SI_N6),SI_N6),     U_MT(LS(SI_CARET),SI_CARET),     	 \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_MT(LS(SI_SS),SI_SS),     U_MT(LS(SI_N1),SI_N1),     U_MT(LS(SI_N2),SI_N2),     U_MT(LS(SI_N3),SI_N3),     U_MT(LS(SI_SQT),SI_SQT),           \
@@ -214,7 +214,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 /* &kp SI_FSLH,     &kp SI_N1,     &kp SI_N2,     &kp SI_N3,     &kp SI_BSLH,     &kp LA(SI_SS),     &kp LA(SI_N1),     &kp LA(SI_N2),     &kp LA(SI_N3),     &kp LA(SI_SQT),    \ */
 /* U_NP,            U_NP,          &kp SI_DOT,    &kp SI_N0,     &kp SI_MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP        */
 
-#define MIRYOKU_ALTERNATIVES_NUM \
+#define MIRYOKU_LAYER_NUM \
 &kp SI_LBKT,     &kp SI_N7,     &kp SI_N8,     &kp SI_N9,     &kp SI_RBKT,     &kp LA(SI_SS),         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
 &kp SI_SEMI,     &kp SI_N4,     &kp SI_N5,     &kp SI_N6,     &kp SI_EQUAL,    &kp LA(SI_SS),         U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &kp SI_FSLH,     &kp SI_N1,     &kp SI_N2,     &kp SI_N3,     &kp SI_BSLH,     &kp LA(SI_SS),         U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
