@@ -190,9 +190,10 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, SPACE), U_
 
 
 
-
+/*
 #define MIRYOKU_LAYER_MOUSE \
 LA(&kp SI_Q),            LA(&kp SI_W),       LA(&kp SI_E),       LA(&kp SI_R),       LA(&kp SI_T),       LA(&kp SI_Z),       LA(&kp SI_U),       LA(&kp SI_I),      LA(&kp SI_O),      LA(&kp SI_P),      \
 LA(&kp SI_A),			LA(&kp SI_S),            LA(&kp SI_D),       LA(&kp SI_F),       LA(&kp SI_G),       LA(&kp SI_H),       LA(&kp SI_J),       LA(&kp SI_K),       LA(&kp SI_L),      LA(&kp SI_OE),      \
 LA(&kp SI_Y),			LA(&kp SI_X),            LA(&kp SI_C),       LA(&kp SI_V),       LA(&kp SI_B),       LA(&kp SI_N),       U_MT(LA(LS(&kp SI_M)), LA(&kp SI_M)),       LA(SI_COMMA),       LA(SI_DOT),      LA(SI_MINUS),     \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+*/
