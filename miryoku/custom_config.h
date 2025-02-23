@@ -191,7 +191,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, SPACE), U_
 
 
 #define MIRYOKU_LAYER_MOUSE \
-U_MT(LA(LS(Q)), LA(Q)),            LA(W),       LA(E),       LA(R),       LA(T),       LA(Z),       LA(U),       LA(I),      LA(O),      LA(P),      \
-LA(A),			LA(S),            LA(D),       LA(F),       LA(G),       LA(H),       LA(J),       LA(K),       LA(L),      U_NA,      \
-LA(Y),			LA(X),            LA(C),       LA(V),       LA(B),       LA(N),       U_MT(LA(LS(M)), LA(M)),       LA(COMMA),       LA(DOT),      LA(MINUS),     \
+U_MT(LG(LS(Q)), LG(Q)),           LG(W),       LG(E),       LG(R),       LG(T),       LG(Z),       LG(U),       LG(I),      LG(O),      LG(P),      \
+LG(A),			LG(S),            LG(D),       LG(F),       LG(G),       LG(H),       LG(J),       LG(K),       LG(L),      U_NA,      \
+LG(Y),			LG(X),            LG(C),       LG(V),       LG(B),       LG(N),       U_MT(LG(LS(M)), LG(M)),       LG(COMMA),       LG(DOT),      LG(MINUS),     \
 U_NP,              U_NP,               U_NA, U_NA, U_NA,, U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
