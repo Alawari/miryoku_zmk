@@ -198,13 +198,13 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(SI_LGUI, SPACE), 
 /*  &kp LA(A),     &kp LA(S),     &kp LA(D),     &kp LA(F),     &kp LA(G),     &kp LA(H),     &kp LA(J),     &kp LA(K),     &kp LA(L),     &kp LA(SI_OE),    \ */
 /* &kp LA(SI_Y),     &kp LA(X),     &kp LA(C),    &kp LA(V),     U_MT(SI_LG(LS(SI_B)), SI_LG(SI_B)),     &kp LA(N),     U_MT(SI_LG(LS(SI_M)), SI_LG(SI_M)),     &kp LA(SI_COMMA),    &kp LA(SI_DOT),     &kp LA(SI_MINUS),    \ */
 /* U_NP,              U_NP,              U_NA, U_NA, U_NA, U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP */
-/*
+
 #define MIRYOKU_LAYER_MOUSE \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_MT(LS(SI_SS),SI_SS),     U_MT(LS(SI_N7),SI_N7),     U_MT(LS(SI_N8),SI_N8),     U_MT(LS(SI_N9),SI_N9),     U_MT(LS(SI_N0),SI_N0),            \
 &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_MT(LS(SI_SS),SI_SS),     U_MT(LS(SI_N4),SI_N4),     U_MT(LS(SI_N5),SI_N5),     U_MT(LS(SI_N6),SI_N6),     U_MT(LS(SI_CARET),SI_CARET),     	 \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_MT(LS(SI_SS),SI_SS),     U_MT(LS(SI_N1),SI_N1),     U_MT(LS(SI_N2),SI_N2),     U_MT(LS(SI_N3),SI_N3),     U_MT(LS(SI_SQT),SI_SQT),           \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,                   U_NA,              U_NA,              U_NA,              U_NP,              U_NP        
-*/
+
 
 
 
