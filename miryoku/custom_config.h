@@ -194,7 +194,7 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, SPACE), U_
 
 
 #define MIRYOKU_LAYER_MOUSE \
-LA(SI_Q),     U_MT(LA(LS(W)), LA(W)),     U_MT(LA(LS(E)), LA(E)),     U_MT(LA(LS(R)), LA(R)),     U_MT(LA(LS(T)), LA(T)),     U_MT(LA(LS(SI_Z)), LA(SI_Z)),     U_MT(LA(LS(U)), LA(U)),     U_MT(LA(LS(I)), LA(I)),     U_MT(LA(LS(O)), LA(O)),     U_MT(LA(LS(P)), LA(P)),    \
+&kp LA(SI_Q),     U_MT(LA(LS(W)), LA(W)),     U_MT(LA(LS(E)), LA(E)),     U_MT(LA(LS(R)), LA(R)),     U_MT(LA(LS(T)), LA(T)),     U_MT(LA(LS(SI_Z)), LA(SI_Z)),     U_MT(LA(LS(U)), LA(U)),     U_MT(LA(LS(I)), LA(I)),     U_MT(LA(LS(O)), LA(O)),     U_MT(LA(LS(P)), LA(P)),    \
 U_MT(LA(LS(A)), LA(A)),     U_MT(LA(LS(S)), LA(S)),     U_MT(LA(LS(D)), LA(D)),     U_MT(LA(LS(F)), LA(F)),     U_MT(LA(LS(G)), LA(G)),     U_MT(LA(LS(H)), LA(H)),     U_MT(LA(LS(J)), LA(J)),     U_MT(LA(LS(K)), LA(K)),     U_MT(LA(LS(L)), LA(L)),     U_MT(LA(LS(SI_OE)), LA(SI_OE)),    \
 U_MT(LA(LS(SI_Y)), LA(SI_Y)),     U_MT(LA(LS(X)), LA(X)),     U_MT(LA(LS(C)), LA(C)),     U_MT(LA(LS(V)), LA(V)),     U_MT(LA(LS(B)), LA(B)),     U_MT(LA(LS(N)), LA(N)),     U_MT(LA(LS(M)), LA(M)),     U_MT(LA(SI_SEMI), LA(SI_COMMA)),     U_MT(LA(SI_DOT), LA(SI_COLON)),     U_MT(LA(SI_UNDER), LA(SI_MINUS)),    \
 U_NP,              U_NP,              U_NA, U_NA, U_NA, U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
