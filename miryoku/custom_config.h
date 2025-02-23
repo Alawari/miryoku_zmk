@@ -228,10 +228,9 @@ U_NP,            U_NP,          &kp SI_DOT,    &kp SI_N0,     &kp SI_MINUS,     
 /* &kp SI_COLON,         &kp SI_DLLR,          &kp SI_PRCNT,         &kp SI_CARET,         &kp SI_PLUS,          &kp LA(LS(SI_SS)),     &kp LA(LS(SI_N4)),     &kp LA(LS(SI_N5)),     &kp LA(LS(SI_N6)),     &kp LA(LS(SI_CARET)),           \ */
 /* &kp SI_TILDE,         &kp SI_EXCL,          &kp SI_AT,            &kp SI_HASH,          &kp SI_PIPE,          &kp LA(LS(SI_SS)),     &kp LA(LS(SI_N1)),     &kp LA(LS(SI_N2)),     &kp LA(LS(SI_N3)),     &kp LA(LS(SI_SQT)),             \ */
 /* U_NP,              U_NP,              &kp SI_LPAR,          &kp SI_RPAR,          &kp SI_UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP */
-/*
+
 #define MIRYOKU_LAYER_SYM \
 &kp SI_LBRC,          &kp SI_AMPS,          &kp SI_ASTRK,         &kp SI_LPAR,          &kp SI_RBRC,         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
 &kp SI_COLON,         &kp SI_DLLR,          &kp SI_PRCNT,         &kp SI_CARET,         &kp SI_PLUS,         U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &kp SI_TILDE,         &kp SI_EXCL,          &kp SI_AT,            &kp SI_HASH,          &kp SI_PIPE,         U_NA,              &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp SI_LPAR,          &kp SI_RPAR,          &kp SI_UNDER,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP     
-*/
+U_NP,              U_NP,              &kp SI_LPAR,          &kp SI_RPAR,          &kp SI_UNDER,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
