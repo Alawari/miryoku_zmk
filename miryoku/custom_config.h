@@ -3,12 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-/* #pragma once */
-
-/* #include <dt-bindings/zmk/hid_usage.h> */
-/* #include <dt-bindings/zmk/hid_usage_pages.h> */
-/* #include <dt-bindings/zmk/modifiers.h> */
-/* #include <dt-bindings/zmk/keys.h> */
 
 /*
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -165,11 +159,11 @@
  * Base layer:
  ***************************************************************************************************
  *  +--------+--------+--------+--------+--------+--------+             +--------+--------+--------+--------+--------+--------+
- *  | TAB    |  q  Q  |  w  W  |  f  F  |  p  P  |  b  B  |             |  j  J  |  l  L  |  u  U  |  y  Y  |  '     |  =  +  |
+ *  | TAB    |  q  Q  |  w  W  |  f  F  |  p  P  |  b  B  |             |  j  J  |  l  L  |  u  U  |  y  Y  |  +  *  |        |
  *  +--------+--------+--------+--------+--------+--------+             +--------+--------+--------+--------+--------+--------+
- *  | EXT1   |  a  A  |  r  R  |  s  S  |  t  T  |  g  G  |             |  m  M  |  n  N  |  e  E  |  i  I  |  o  O  |  '  "  |
+ *  | EXT1   |  a  A  |  r  R  |  s  S  |  t  T  |  g  G  |             |  m  M  |  n  N  |  e  E  |  i  I  |  o  O  |        |
  *  +--------+--------+--------+--------+--------+--------+             +--------+--------+--------+--------+--------+--------+
- *  | Shift  |  z  Z  |  x  X  |  c  C  |  d  D  |  v  V  |             |  k  K  |  h  H  |  ,  <  |  .  >  |  /  ?  | Shift  |
+ *  | Shift  |  z  Z  |  x  X  |  c  C  |  d  D  |  v  V  |             |  k  K  |  h  H  |  ,  ;  |  .  :  |  #  '  |        |
  *  +--------+--------+--------+----+---+----+---+----+---+----+   +----+---+----+---+----+---+----+--------+--------+--------+
  *                                  | Esc    | Space   | Tab   |   | Enter  | BSPC    | DEL   |
  *                                  +--------+--------+--------+   +--------+--------+--------+
@@ -184,51 +178,47 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_MOUSE, SPACE), 
 
 
 
-/* #define MIRYOKU_LAYER_NAV \ */
-/* U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \ */
-/* &kp SI_LGUI,          &kp SI_LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &u_caps_word,      &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         \ */
-/* U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp INS,           &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           \ */
-/* U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP */
 
+#define MIRYOKU_ALTERNATIVES_NAV \
+U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
+&kp SI_LGUI,          &kp SI_LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &u_caps_word,      &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         \
+U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp INS,           &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
-
-
-/* #define MIRYOKU_LAYER_MOUSE \ */
-/* U_MT(SI_LG(LS(SI_Q)), SI_LG(SI_Q)),     &kp LA(W),     &kp LA(E),     &kp LA(R),     &kp LA(T),     &kp LA(SI_Z),     &kp LA(U),     &kp LA(I),     &kp LA(O),     &kp LA(P),    \ */
-/*  &kp LA(A),     &kp LA(S),     &kp LA(D),     &kp LA(F),     &kp LA(G),     &kp LA(H),     &kp LA(J),     &kp LA(K),     &kp LA(L),     &kp LA(SI_OE),    \ */
-/* &kp LA(SI_Y),     &kp LA(X),     &kp LA(C),    &kp LA(V),     U_MT(SI_LG(LS(SI_B)), SI_LG(SI_B)),     &kp LA(N),     U_MT(SI_LG(LS(SI_M)), SI_LG(SI_M)),     &kp LA(SI_COMMA),    &kp LA(SI_DOT),     &kp LA(SI_MINUS),    \ */
-/* U_NP,              U_NP,              U_NA, U_NA, U_NA, U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP */
 
 #define MIRYOKU_LAYER_MOUSE \
 U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_MT(SI_LG(LS(SI_SS)),SI_LG(SI_SS)),     U_MT(SI_LG(LS(SI_N7)),SI_LG(SI_N7)),     U_MT(SI_LG(LS(SI_N8)),SI_LG(SI_N8)),     U_MT(SI_LG(LS(SI_N9)),SI_LG(SI_N9)),     U_MT(SI_LG(LS(SI_N0)),SI_LG(SI_N0)),            \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_MT(SI_LG(LS(SI_SS)),SI_LG(SI_SS)),     U_MT(SI_LG(LS(SI_N4)),SI_LG(SI_N4)),     U_MT(SI_LG(LS(SI_N5)),SI_LG(SI_N5)),     U_MT(SI_LG(LS(SI_N6)),SI_LG(SI_N6)),     U_MT(SI_LG(LS(SI_CARET)),SI_LG(SI_CARET)),     	 \
+&kp SI_LGUI,          &kp SI_LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_MT(SI_LG(LS(SI_SS)),SI_LG(SI_SS)),     U_MT(SI_LG(LS(SI_N4)),SI_LG(SI_N4)),     U_MT(SI_LG(LS(SI_N5)),SI_LG(SI_N5)),     U_MT(SI_LG(LS(SI_N6)),SI_LG(SI_N6)),     U_MT(SI_LG(LS(SI_CARET)),SI_LG(SI_CARET)),     	 \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_MT(SI_LG(LS(SI_SS)),SI_LG(SI_SS)),     U_MT(SI_LG(LS(SI_N1)),SI_LG(SI_N1)),     U_MT(SI_LG(LS(SI_N2)),SI_LG(SI_N2)),     U_MT(SI_LG(LS(SI_N3)),SI_LG(SI_N3)),     U_MT(SI_LG(LS(SI_SQT)),SI_LG(SI_SQT)),           \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,                   U_NA,              U_NA,              U_NA,              U_NP,              U_NP        
 
 
-/* #define MIRYOKU_LAYER_NUM \ */
-/* &kp SI_LBKT,     &kp SI_N7,     &kp SI_N8,     &kp SI_N9,     &kp SI_RBKT,     &kp LA(SI_SS),     &kp LA(SI_N7),     &kp LA(SI_N8),     &kp LA(SI_N9),     &kp LA(SI_N0),    \ */
-/* &kp SI_SEMI,     &kp SI_N4,     &kp SI_N5,     &kp SI_N6,     &kp SI_EQUAL,    &kp LA(SI_SS),     &kp LA(SI_N4),     &kp LA(SI_N5),     &kp LA(SI_N6),     &kp LA(SI_CARET),    \ */
-/* &kp SI_FSLH,     &kp SI_N1,     &kp SI_N2,     &kp SI_N3,     &kp SI_BSLH,     &kp LA(SI_SS),     &kp LA(SI_N1),     &kp LA(SI_N2),     &kp LA(SI_N3),     &kp LA(SI_SQT),    \ */
-/* U_NP,            U_NP,          &kp SI_DOT,    &kp SI_N0,     &kp SI_MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP        */
+#define MIRYOKU_ALTERNATIVES_MEDIA \
+U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RGB_TOG,         U_RGB_EFF,         U_RGB_HUI,         U_RGB_SAI,         U_RGB_BRI,         \
+&kp SI_LGUI,          &kp SI_LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_EP_TOG,          &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        \
+U_NA,              &kp RALT,          &u_to_U_FUN,       &u_to_U_MEDIA,     U_NA,              &u_out_tog,        &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,       \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp C_STOP,        &kp C_PP,          &kp C_MUTE,        U_NP,              U_NP
+
+
+
+
 
 #define MIRYOKU_LAYER_NUM \
 &kp SI_LBKT,     &kp SI_N7,     &kp SI_N8,     &kp SI_N9,     &kp SI_RBKT,     U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-&kp SI_SEMI,     &kp SI_N4,     &kp SI_N5,     &kp SI_N6,     &kp SI_EQUAL,    U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
+&kp SI_SEMI,     &kp SI_N4,     &kp SI_N5,     &kp SI_N6,     &kp SI_EQUAL,    U_NA,              &kp LSHFT,         &kp LCTRL,         &kp SI_LALT,          &kp SI_LGUI,          \
 &kp SI_FSLH,     &kp SI_N1,     &kp SI_N2,     &kp SI_N3,     &kp SI_BSLH,     U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
 U_NP,            U_NP,          &kp SI_DOT,    &kp SI_N0,     &kp SI_MINUS,    U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
-
-
-
-/* #define MIRYOKU_LAYER_SYM \ */
-/* &kp SI_LBRC,          &kp SI_AMPS,          &kp SI_ASTRK,         &kp SI_LPAR,          &kp SI_RBRC,          &kp LA(LS(SI_SS)),     &kp LA(LS(SI_N7)),     &kp LA(LS(SI_N8)),     &kp LA(LS(SI_N9)),     &kp LA(LS(SI_N0)),              \ */
-/* &kp SI_COLON,         &kp SI_DLLR,          &kp SI_PRCNT,         &kp SI_CARET,         &kp SI_PLUS,          &kp LA(LS(SI_SS)),     &kp LA(LS(SI_N4)),     &kp LA(LS(SI_N5)),     &kp LA(LS(SI_N6)),     &kp LA(LS(SI_CARET)),           \ */
-/* &kp SI_TILDE,         &kp SI_EXCL,          &kp SI_AT,            &kp SI_HASH,          &kp SI_PIPE,          &kp LA(LS(SI_SS)),     &kp LA(LS(SI_N1)),     &kp LA(LS(SI_N2)),     &kp LA(LS(SI_N3)),     &kp LA(LS(SI_SQT)),             \ */
-/* U_NP,              U_NP,              &kp SI_LPAR,          &kp SI_RPAR,          &kp SI_UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP */
 
 #define MIRYOKU_LAYER_SYM \
 &kp SI_LBRC,          &kp SI_AMPS,          &kp SI_ASTRK,         &kp SI_LPAR,          &kp SI_RBRC,         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
 &kp SI_COLON,         &kp SI_DLLR,          &kp SI_PRCNT,         &kp SI_CARET,         &kp SI_PLUS,         U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 &kp SI_TILDE,         &kp SI_EXCL,          &kp SI_AT,            &kp SI_HASH,          &kp SI_PIPE,         U_NA,              &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp SI_LPAR,          &kp SI_RPAR,          &kp SI_UNDER,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NP,              U_NP,              &kp SI_LPAR,          &kp SI_RPAR,          &kp SI_UNDER,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP     
+
+
+#define MIRYOKU_ALTERNATIVES_FUN \
+&kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,         U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+&kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          U_NA,              &kp LSHFT,         &kp LCTRL,         &kp SI_LALT,          &kp SI_LGUI,          \
+&kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,   U_NA,              &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          U_NA,              \
+U_NP,              U_NP,              &kp K_APP,         &kp SPACE,         &kp TAB,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
