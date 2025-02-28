@@ -153,9 +153,9 @@
 /* #define SI_LALT LGUI	// left alt */
 /* #define SI_LA LG	// left alt func */
 #define SI_LGUI LGUI	// super
-#define SI_LG LG	// super func
+#define SI_LG LA	// super func
 #define SI_LALT LALT	// left alt
-#define SI_LA LA	// left alt func
+#define SI_LA LG	// left alt func
 
 
 
