@@ -148,10 +148,14 @@
 #define SI_RBRC RA(SI_N0) // }
 #define SI_SECT RA(SI_M) // §
 // special keys
-#define SI_LGUI LALT	// super
-#define SI_LG LA	// super func
-#define SI_LALT LGUI	// left alt
-#define SI_LA LG	// left alt func
+/* #define SI_LGUI LALT	// super */
+/* #define SI_LG LA	// super func */
+/* #define SI_LALT LGUI	// left alt */
+/* #define SI_LA LG	// left alt func */
+#define SI_LGUI LGUI	// super
+#define SI_LG LG	// super func
+#define SI_LALT LALT	// left alt
+#define SI_LA LA	// left alt func
 
 
 
@@ -217,10 +221,10 @@ U_NP,            U_NP,          &kp SI_DOT,    &kp SI_N0,     &kp SI_MINUS,    U
 
 
 #define MIRYOKU_LAYER_MOUSE \
-U_MT(SI_LG(LS(SI_SS)),SI_LG(SI_SS)),     U_MT(SI_LG(LS(SI_N7)),SI_LG(SI_N7)),     U_MT(SI_LG(LS(SI_N8)),SI_LG(SI_N8)),     U_MT(SI_LG(LS(SI_N9)),SI_LG(SI_N9)),     U_MT(SI_LG(LS(SI_N0)),SI_LG(SI_N0)),               U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-U_MT(SI_LG(LS(SI_SS)),SI_LG(SI_SS)),     U_MT(SI_LG(LS(SI_N4)),SI_LG(SI_N4)),     U_MT(SI_LG(LS(SI_N5)),SI_LG(SI_N5)),     U_MT(SI_LG(LS(SI_N6)),SI_LG(SI_N6)),     U_MT(SI_LG(LS(SI_CARET)),SI_LG(SI_CARET)),         U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
+U_MT(SI_LG(LS(SI_J)),SI_LG(SI_J)),     U_MT(SI_LG(LS(SI_N7)),SI_LG(SI_N7)),     U_MT(SI_LG(LS(SI_N8)),SI_LG(SI_N8)),     U_MT(SI_LG(LS(SI_N9)),SI_LG(SI_N9)),     U_MT(SI_LG(LS(SI_K)),SI_LG(SI_K)),               U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+U_MT(SI_LG(LS(SI_H)),SI_LG(SI_H)),     U_MT(SI_LG(LS(SI_N4)),SI_LG(SI_N4)),     U_MT(SI_LG(LS(SI_N5)),SI_LG(SI_N5)),     U_MT(SI_LG(LS(SI_N6)),SI_LG(SI_N6)),     U_MT(SI_LG(LS(L)),SI_LG(L)),         U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
 U_MT(SI_LG(LS(SI_SS)),SI_LG(SI_SS)),     U_MT(SI_LG(LS(SI_N1)),SI_LG(SI_N1)),     U_MT(SI_LG(LS(SI_N2)),SI_LG(SI_N2)),     U_MT(SI_LG(LS(SI_N3)),SI_LG(SI_N3)),     U_MT(SI_LG(LS(SI_SQT)),SI_LG(SI_SQT)),             U_NA,              &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,          U_NA,              \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,                   U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NP,              U_NP,              U_MT(SI_LG(LS(SI_E)),SI_LG(SI_E)),              U_MT(SI_LG(LS(SI_N0)),SI_LG(SI_N0)),               U_MT(SI_LG(LS(SI_W)),SI_LG(SI_W)),                   U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 
 #define MIRYOKU_LAYER_FUN \
@@ -243,3 +247,4 @@ N30, N31, K32, K33, K34,                         K35, K36, K37, N38, N39 \
 &kp TAB K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &kp SI_AE \
 &kp LSHFT K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &kp SI_OE \
                K32  K33  K34       K35  K36  K37
+
